@@ -1,0 +1,122 @@
+2026-07-15 17:28:21,420 | INFO | Training Script Started
+2026-07-15 17:28:21,968 | ERROR | Training Script failed: not enough values to unpack (expected 5, got 4)
+Traceback (most recent call last):
+  File "C:\Users\ashutosh.prakash\Desktop\ML Deployment\ML_Model_Deployment\Training_and_Prediction_Script\training.py", line 51, in train_model
+    X_train,X_test,y_train,y_train,y_test = train_test_split(
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: not enough values to unpack (expected 5, got 4)
+2026-07-15 17:34:19,770 | INFO | Training Script Started
+2026-07-15 17:34:20,083 | ERROR | Training Script failed: not enough values to unpack (expected 5, got 4)
+Traceback (most recent call last):
+  File "C:\Users\ashutosh.prakash\Desktop\ML Deployment\ML_Model_Deployment\Training_and_Prediction_Script\training.py", line 51, in train_model
+    X_train,X_test,y_train,y_train,y_test = train_test_split(
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: not enough values to unpack (expected 5, got 4)
+2026-07-15 17:37:48,164 | INFO | Training Script Started
+2026-07-15 17:37:48,179 | INFO | Dataset Loaded with the Shape:(768, 9)
+2026-07-15 17:37:48,447 | INFO | Model Training Completed.
+2026-07-15 17:37:48,484 | INFO | Training Accuracy:0.761
+2026-07-15 17:37:48,484 | INFO | Testing Accuracy:0.734
+2026-07-15 17:37:48,484 | INFO | Train Classification Report 
+               precision    recall  f1-score   support
+
+           0       0.84      0.78      0.81       400
+           1       0.64      0.73      0.68       214
+
+    accuracy                           0.76       614
+   macro avg       0.74      0.75      0.74       614
+weighted avg       0.77      0.76      0.76       614
+
+2026-07-15 17:37:48,486 | INFO | Test Classification Report 
+               precision    recall  f1-score   support
+
+           0       0.82      0.75      0.79       100
+           1       0.60      0.70      0.65        54
+
+    accuracy                           0.73       154
+   macro avg       0.71      0.73      0.72       154
+weighted avg       0.75      0.73      0.74       154
+
+2026-07-15 17:37:48,496 | INFO | Model saved to C:\Users\ashutosh.prakash\Desktop\ML Deployment\ML_Model_Deployment\Training_and_Prediction_Script\model_dir\diabetes_model_pipeline.joblib
+2026-07-15 17:37:48,496 | INFO | Training Script Finished
+2026-07-15 18:11:54,247 | INFO | Model Loaded
+2026-07-15 18:11:54,388 | ERROR | Prediction Script Failed:The feature names should match those that were passed during fit.
+Feature names unseen at fit time:
+- Blood Pressure
+- DiabetesPedigreeFUnction
+- Skin Thickness
+Feature names seen at fit time, yet now missing:
+- BloodPressure
+- DiabetesPedigreeFunction
+- SkinThickness
+Traceback (most recent call last):
+  File "C:\Users\ashutosh.prakash\Desktop\ML Deployment\ML_Model_Deployment\Training_and_Prediction_Script\prediction.py", line 48, in main
+    prediction = predict(loaded_model, input_data= input_data)
+  File "C:\Users\ashutosh.prakash\Desktop\ML Deployment\ML_Model_Deployment\Training_and_Prediction_Script\prediction.py", line 11, in predict
+    predicted_value = model.predict(df)[0]
+                      ~~~~~~~~~~~~~^^^^
+  File "C:\Users\ashutosh.prakash\AppData\Local\Programs\Python\Python314\Lib\site-packages\sklearn\pipeline.py", line 796, in predict
+    Xt = transform.transform(Xt)
+  File "C:\Users\ashutosh.prakash\AppData\Local\Programs\Python\Python314\Lib\site-packages\sklearn\utils\_set_output.py", line 319, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+  File "C:\Users\ashutosh.prakash\AppData\Local\Programs\Python\Python314\Lib\site-packages\sklearn\preprocessing\_data.py", line 1111, in transform
+    X = validate_data(
+        self,
+    ...<6 lines>...
+        ensure_all_finite="allow-nan",
+    )
+  File "C:\Users\ashutosh.prakash\AppData\Local\Programs\Python\Python314\Lib\site-packages\sklearn\utils\validation.py", line 3013, in validate_data
+    _check_feature_names(_estimator, X, reset=reset)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashutosh.prakash\AppData\Local\Programs\Python\Python314\Lib\site-packages\sklearn\utils\validation.py", line 2865, in _check_feature_names
+    raise ValueError(message)
+ValueError: The feature names should match those that were passed during fit.
+Feature names unseen at fit time:
+- Blood Pressure
+- DiabetesPedigreeFUnction
+- Skin Thickness
+Feature names seen at fit time, yet now missing:
+- BloodPressure
+- DiabetesPedigreeFunction
+- SkinThickness
+
+2026-07-15 18:12:24,101 | INFO | Model Loaded
+2026-07-15 18:12:24,181 | ERROR | Prediction Script Failed:The feature names should match those that were passed during fit.
+Feature names unseen at fit time:
+- Blood Pressure
+- Skin Thickness
+Feature names seen at fit time, yet now missing:
+- BloodPressure
+- SkinThickness
+Traceback (most recent call last):
+  File "C:\Users\ashutosh.prakash\Desktop\ML Deployment\ML_Model_Deployment\Training_and_Prediction_Script\prediction.py", line 48, in main
+    prediction = predict(loaded_model, input_data= input_data)
+  File "C:\Users\ashutosh.prakash\Desktop\ML Deployment\ML_Model_Deployment\Training_and_Prediction_Script\prediction.py", line 11, in predict
+    predicted_value = model.predict(df)[0]
+                      ~~~~~~~~~~~~~^^^^
+  File "C:\Users\ashutosh.prakash\AppData\Local\Programs\Python\Python314\Lib\site-packages\sklearn\pipeline.py", line 796, in predict
+    Xt = transform.transform(Xt)
+  File "C:\Users\ashutosh.prakash\AppData\Local\Programs\Python\Python314\Lib\site-packages\sklearn\utils\_set_output.py", line 319, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+  File "C:\Users\ashutosh.prakash\AppData\Local\Programs\Python\Python314\Lib\site-packages\sklearn\preprocessing\_data.py", line 1111, in transform
+    X = validate_data(
+        self,
+    ...<6 lines>...
+        ensure_all_finite="allow-nan",
+    )
+  File "C:\Users\ashutosh.prakash\AppData\Local\Programs\Python\Python314\Lib\site-packages\sklearn\utils\validation.py", line 3013, in validate_data
+    _check_feature_names(_estimator, X, reset=reset)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashutosh.prakash\AppData\Local\Programs\Python\Python314\Lib\site-packages\sklearn\utils\validation.py", line 2865, in _check_feature_names
+    raise ValueError(message)
+ValueError: The feature names should match those that were passed during fit.
+Feature names unseen at fit time:
+- Blood Pressure
+- Skin Thickness
+Feature names seen at fit time, yet now missing:
+- BloodPressure
+- SkinThickness
+
+2026-07-15 18:15:28,215 | INFO | Model Loaded
+2026-07-15 18:15:28,554 | INFO | Prediction Result: No Diabetes
+2026-07-15 18:15:28,554 | INFO | Prediction Script Finished.
