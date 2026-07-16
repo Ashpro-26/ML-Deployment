@@ -1,0 +1,31 @@
+2026-07-16 12:43:14,439 | INFO | Loading Trained Pipeline....
+2026-07-16 12:45:35,446 | INFO | Loading Trained Pipeline....
+2026-07-16 12:45:35,446 | INFO | Model loaded successfully
+2026-07-16 12:45:49,282 | INFO | Loading Trained Pipeline....
+2026-07-16 12:45:49,282 | INFO | Model loaded successfully
+2026-07-16 13:22:16,298 | INFO | Loading Trained Pipeline....
+2026-07-16 13:22:16,299 | INFO | Model loaded successfully
+2026-07-16 13:32:28,253 | INFO | Loading Trained Pipeline....
+2026-07-16 13:32:28,254 | INFO | Model loaded successfully
+2026-07-16 14:38:46,893 | ERROR | Exception in callback _ProactorBasePipeTransport._call_connection_lost()
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost()>
+Traceback (most recent call last):
+  File "C:\Users\ashutosh.prakash\AppData\Local\Programs\Python\Python314\Lib\asyncio\events.py", line 94, in _run
+    self._context.run(self._callback, *self._args)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashutosh.prakash\AppData\Local\Programs\Python\Python314\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-07-16 14:39:49,821 | INFO | Loading Trained Pipeline....
+2026-07-16 14:39:49,822 | INFO | Model loaded successfully
+2026-07-16 14:53:09,237 | ERROR | Exception in callback _ProactorBasePipeTransport._call_connection_lost()
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost()>
+Traceback (most recent call last):
+  File "C:\Users\ashutosh.prakash\AppData\Local\Programs\Python\Python314\Lib\asyncio\events.py", line 94, in _run
+    self._context.run(self._callback, *self._args)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashutosh.prakash\AppData\Local\Programs\Python\Python314\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
