@@ -2,3 +2,5 @@ Saving_and_Loading_Trained_ML_Model/diabetes.csv
 Training_and_Prediction_Script/diabetes.csv
 Serve_ML_Model_as_API/.env
 Streamlit_App_for_ML/.env
+P_StreamLit_Codebase/.env
+P_ML_Fast_API_Codebase/.env
